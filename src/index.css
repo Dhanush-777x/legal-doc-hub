@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.login-section {
+  background-image: linear-gradient(rgba(0, 128, 0, 0.2), rgba(50, 65, 50, 0)), url('../src/Assets/login-bg4.jpg');
+  background-size: cover;
+  background-position: center;
+}
