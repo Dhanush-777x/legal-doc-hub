@@ -5,7 +5,6 @@ import HomePage from './Components/Home';
 import LoginPage from './Components/Login';
 import Signup from './Components/Signup';
 import Dashboard from './Components/Dashboard';
-import Sidebar from './Components/SidebarComponent';
 import SidebarComponent from './Components/SidebarComponent';
 
 function App() {
