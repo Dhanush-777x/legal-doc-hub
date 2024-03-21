@@ -7,7 +7,13 @@ html {
 }
 
 .login-section {
-  background-image: linear-gradient(rgba(0, 128, 0, 0.2), rgba(50, 65, 50, 0)), url('../src/Assets/login-bg4.jpg');
+  background-image: linear-gradient(rgba(216, 224, 216, 0), rgba(45, 61, 45, 0)),url('../src/Assets/login-bg4.jpg');
   background-size: cover;
   background-position: center;
+}
+
+.SidebarItem:hover {
+  background-color:#1d2b3d; /* Change the background color on hover */
+  border-radius: 12px; /* Add border radius for the hover effect */
+  transition: background-color 0.1s ease; /* Smooth transition for hover effect */
 }
