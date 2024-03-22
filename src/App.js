@@ -5,7 +5,7 @@ import HomePage from './Components/Home';
 import LoginPage from './Components/Login';
 import Signup from './Components/Signup';
 import Dashboard from './Components/Dashboard';
-import SidebarComponent from './Components/SidebarComponent';
+import AddDocs from './Components/AddDocs';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
           <Route path="login" element={<LoginPage />} />
           <Route path="signup" element={<Signup />} />
           <Route path="dashboard" element={<Dashboard />} />
-          <Route path="sidebar" element={<SidebarComponent />} />
+          <Route path="add-docs" element={<AddDocs />} />
       </Routes>
     </BrowserRouter>
   );

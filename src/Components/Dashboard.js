@@ -16,8 +16,8 @@ function Dashboard() {
 
     useEffect(() => {
         const updateData = () => {
-            const newTransactions = getRandomNumber(10, 100);
-            const newBlocks = getRandomNumber(10, 100);
+            const newTransactions = getRandomNumber(1, 10);
+            const newBlocks = getRandomNumber(1, 3);
 
             setTransactions(newTransactions);
             setBlocks(prevBlocks => prevBlocks + newBlocks);
@@ -40,7 +40,7 @@ function Dashboard() {
                 labels: ['Transactions'],
                 datasets: [
                     {
-                        data: [transactions, 1000 - transactions],
+                        data: [transactions, 100 - transactions],
                         backgroundColor: [
                             transactions >= 33 ? '#4CAF50' : '#ddd',
                             '#fff',
@@ -103,15 +103,15 @@ function Dashboard() {
     useEffect(() => {
         // Update chart data when transactions and blocks change
         if (transactionChartRef.current !== null && blockChartRef.current !== null) {
-            transactionChartRef.current.data.datasets[0].data = [transactions, 1000 - transactions];
+            transactionChartRef.current.data.datasets[0].data = [transactions, 100 - transactions];
             transactionChartRef.current.data.datasets[0].backgroundColor = [
-                transactions >= 33 ? '#4CAF50' : '#ddd',
+                transactions >= 1 ? '#4CAF50' : '#ddd',
                 '#fff',
             ];
 
             blockChartRef.current.data.datasets[0].data = [blocks, 200 - blocks];
             blockChartRef.current.data.datasets[0].backgroundColor = [
-                blocks >= 33 ? '#4CAF50' : '#ddd',
+                blocks >= 1 ? '#4CAF50' : '#ddd',
                 '#fff',
             ];
 
