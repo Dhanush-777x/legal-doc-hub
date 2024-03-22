@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SidebarComponent from './SidebarComponent';
 
 function AddDocs() {
   const [fileName, setFileName] = useState('');
@@ -22,6 +23,8 @@ function AddDocs() {
   };
 
   return (
+    <div className=''>
+    <SidebarComponent/>
     <div className="bg-gray-900 text-text min-h-screen flex justify-center items-center relative overflow-hidden login-section">
       <div className="bg-background bg-opacity-50 backdrop-blur-lg rounded-lg shadow-md p-8 max-w-md w-full">
         <h1 className="text-3xl font-semibold text-white mb-6">Add Documents</h1>
@@ -63,6 +66,7 @@ function AddDocs() {
           </button>
         </form>
       </div>
+    </div>
     </div>
   );
 }

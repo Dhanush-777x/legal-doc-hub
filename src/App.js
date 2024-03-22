@@ -6,6 +6,7 @@ import LoginPage from './Components/Login';
 import Signup from './Components/Signup';
 import Dashboard from './Components/Dashboard';
 import AddDocs from './Components/AddDocs';
+import Retreive from './Components/Retreive';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="signup" element={<Signup />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="add-docs" element={<AddDocs />} />
+          <Route path="retreive" element={<Retreive />} />
       </Routes>
     </BrowserRouter>
   );
