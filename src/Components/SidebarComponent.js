@@ -49,7 +49,7 @@ function SidebarComponent() {
                 <span className="w-24 text-xl">Add Docs</span>
               </div>
             </Link>
-            <Link to="/retrieve" className="flex items-center py-4 px-4 text-lg SidebarItem" onClick={handleSidebarItemClick}>
+            <Link to="/retreive" className="flex items-center py-4 px-4 text-lg SidebarItem" onClick={handleSidebarItemClick}>
               <div className='flex flex-row py-4'>
                 <HiDocument className="mr-3 text-2xl" />
                 <span className="w-24 text-xl">Retrieve</span>
